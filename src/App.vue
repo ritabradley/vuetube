@@ -1,7 +1,7 @@
 <template>
     <div>
         <SearchBar @termChange="onTermChange"></SearchBar>
-        <VideoList></VideoList>
+        <VideoList :videos="videos"></VideoList>
     </div>
 </template>
 
@@ -13,10 +13,14 @@
 
     export default {
         name: 'App',
-        props: {},
         components: {
             SearchBar,
             VideoList,
+        },
+        data() {
+            return {
+                videos: [],
+            };
         },
         methods: {
             onTermChange(searchTerm) {
@@ -29,7 +33,7 @@
                             q: searchTerm,
                         },
                     })
-                    .then((res) => console.log(res));
+                    .then((res) => (this.videos = res.data.items));
             },
         },
     };
