@@ -1,6 +1,6 @@
 <template>
     <ul class="list-outside">
-        <VideoListItem v-for="video in videos" v-bind:key="video.id.videoId">{{ video }}</VideoListItem>
+        <VideoListItem v-for="video in videos" v-bind:key="video.id.videoId" :video="video"></VideoListItem>
     </ul>
 </template>
 
