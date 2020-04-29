@@ -1,6 +1,6 @@
 <template>
-    <ul class="list-outside">
-        <VideoListItem v-for="video in videos" v-bind:key="video.id.videoId" :video="video"></VideoListItem>
+    <ul class="list-outside flex flex-col w-1/3">
+        <VideoListItem v-for="video in videos" v-bind:key="video.etag" :video="video"></VideoListItem>
     </ul>
 </template>
 
