@@ -1,7 +1,7 @@
 <template>
     <div class="flex justify-center my-10">
         <input
-            class="border border-gray-400 shadow outline-none rounded-md w-3/4 p-2"
+            class="border border-gray-400 outline-none rounded-md w-3/4 p-2 text-black"
             type="search"
             :placeholder="placeholder"
             @input="onInput"

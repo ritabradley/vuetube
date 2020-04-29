@@ -1,5 +1,5 @@
 <template>
-    <ul class="list-outside flex flex-col w-1/3 border border-gray-400 rounded-lg mx-4">
+    <ul class="list-outside flex flex-col w-1/3 border border-gray-400 rounded-lg divide-y divide-gray-400 mx-4">
         <VideoListItem v-for="video in videos" v-bind:key="video.etag" :video="video"></VideoListItem>
     </ul>
 </template>

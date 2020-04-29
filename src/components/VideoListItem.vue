@@ -1,7 +1,7 @@
 <template>
-    <li class="flex border-gray-400 border-t first:border-t-0">
-        <img class="m-2" :src="video.snippet.thumbnails.default.url" :alt="video.snippet.description" />
-        <span class="text-xl font-bold">{{ video.snippet.title }}</span>
+    <li class="flex p-4">
+        <img class="m-2" :src="thumbnail" :alt="description" />
+        <span class="text-xl font-bold self-center">{{ title }}</span>
     </li>
 </template>
 
@@ -10,6 +10,17 @@
         name: 'VideoListItem',
         props: {
             video: Object,
+        },
+        computed: {
+            thumbnail() {
+                return this.video.snippet.thumbnails.default.url;
+            },
+            title() {
+                return this.video.snippet.title;
+            },
+            description() {
+                return this.video.snippet.description;
+            },
         },
     };
 </script>
