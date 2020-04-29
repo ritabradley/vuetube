@@ -1,5 +1,5 @@
 <template>
-    <li class="flex p-4">
+    <li class="flex p-4 cursor-pointer">
         <img class="m-2" :src="thumbnail" :alt="description" />
         <span class="text-xl font-bold self-center">{{ title }}</span>
     </li>

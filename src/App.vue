@@ -1,5 +1,6 @@
 <template>
     <div>
+        <h1 class="text-5xl text-center font-logo mt-8"><i class="fab fa-youtube pr-2"></i>VueTube</h1>
         <SearchBar @termChange="onTermChange"></SearchBar>
         <VideoList :videos="videos"></VideoList>
     </div>
