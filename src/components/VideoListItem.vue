@@ -1,7 +1,7 @@
 <template>
-    <li class="flex p-4 cursor-pointer hover:bg-red-600">
+    <li class="flex p-4 cursor-pointer hover:bg-red-600" @click="onVideoSelect">
         <img class="m-2" :src="thumbnail" :alt="description" />
-        <span class="text-xl font-bold self-center">{{ title }}</span>
+        <h3 class="text-xl font-bold self-center">{{ title }}</h3>
     </li>
 </template>
 
@@ -10,6 +10,11 @@
         name: 'VideoListItem',
         props: {
             video: Object,
+        },
+        methods: {
+            onVideoSelect() {
+                this.$emit('selectVideo', this.video);
+            },
         },
         computed: {
             thumbnail() {
