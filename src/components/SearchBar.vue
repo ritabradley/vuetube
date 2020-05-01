@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-center my-10">
+    <div class="flex justify-center my-6 lg:my-10">
         <input
             class="border border-gray-400 outline-none rounded-md w-3/4 p-2 text-black"
             type="search"

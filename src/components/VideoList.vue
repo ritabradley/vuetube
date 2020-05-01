@@ -1,5 +1,8 @@
 <template>
-    <div v-if="videos.length > 0" class="w-1/3 border border-gray-400 rounded-lg mx-4">
+    <div
+        v-if="videos.length > 0"
+        class=" w-full lg:w-1/2 xl:w-1/3 border border-gray-400 rounded-lg mx-auto lg:mx-4 mt-4 lg:mt-0"
+    >
         <ul class="list-outside flex flex-col">
             <VideoListItem
                 v-for="video in videos"
@@ -28,5 +31,3 @@
         },
     };
 </script>
-
-<style></style>

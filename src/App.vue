@@ -1,8 +1,8 @@
 <template>
-    <div class="flex flex-col">
-        <h1 class="text-5xl text-center font-logo mt-8"><i class="fab fa-youtube pr-2"></i>VueTube</h1>
+    <div class="w-5/6 lg:w-full mx-auto lg:flex flex-col">
+        <h1 class="text-4xl lg:text-5xl text-center font-logo mt-8"><i class="fab fa-youtube pr-2"></i>VueTube</h1>
         <SearchBar @termChange="onTermChange"></SearchBar>
-        <div class="flex">
+        <div class="lg:flex">
             <VideoDetail :video="selectedVideo"></VideoDetail>
             <VideoList @selectVideo="onVideoSelect" :videos="videos"></VideoList>
         </div>

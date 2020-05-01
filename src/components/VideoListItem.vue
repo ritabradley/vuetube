@@ -1,7 +1,7 @@
 <template>
     <li class="flex p-4 cursor-pointer hover:bg-red-600 border-t first:border-t-0" @click="onVideoSelect">
         <img class="m-2" :src="thumbnail" :alt="description" />
-        <h3 class="text-xl font-bold self-center">{{ title }}</h3>
+        <h3 class="text-md lg:text-xl font-bold self-center">{{ title }}</h3>
     </li>
 </template>
 
