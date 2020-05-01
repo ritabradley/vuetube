@@ -1,7 +1,9 @@
 <template>
-    <div class="w-2/3 px-10 text-center">
-        <h2 class="font-bold text-2xl mb-2">{{ title }}</h2>
-        <p>{{ description }}</p>
+    <div v-if="video" class="w-2/3 mx-4 text-center">
+        <div class="border border-black bg-white text-gray-900 rounded-b-md p-6 shadow-xl">
+            <h2 class="font-bold text-2xl mb-2">{{ title }}</h2>
+            <p class="px-10">{{ description }}</p>
+        </div>
     </div>
 </template>
 
